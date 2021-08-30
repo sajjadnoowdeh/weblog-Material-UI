@@ -1,12 +1,14 @@
-import React from 'react'
-
+import React from "react";
+import { Button, makeStyles } from "@material-ui/core";
+import Navbar from "./components/Navbar";
+const useStyles = makeStyles((theme) => ({}));
 function App() {
-    return (
-        <div className="main ">
-                
-
-        </div>
-    )
+  const classes = useStyles();
+  return (
+    <div>
+        <Navbar/>
+    </div>
+  )
 }
 
-export default App
+export default App;
