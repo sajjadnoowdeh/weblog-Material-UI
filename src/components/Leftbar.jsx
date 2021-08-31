@@ -14,11 +14,14 @@ const useStyles = makeStyles(theme =>({
     height:"100vh",
     color:"white",
     backgroundColor:theme.palette.primary.main,
+    position:"sticky",
+    top:0,
     [theme.breakpoints.up("sm")]:{
       backgroundColor:"white",
       color:"#555",
       border:"1px solid #ece7e7"
-    }
+    },
+ 
   },
   item:{
     display:"flex",
