@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme=>({
       marginBottom:theme.spacing(3)
   }
 }));
-const Post = () => {
+const Post = ({img=""}) => {
   const classes = useStyles();
   return <>
     
@@ -21,7 +21,7 @@ const Post = () => {
            <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image={"https://material-ui.com/static/images/cards/contemplative-reptile.jpg"}
+                image={img}
                 title={"My Home Media"}
               />
               <CardContent>
